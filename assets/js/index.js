@@ -34,14 +34,14 @@ function walletmodal(){
 async function loadmm_gasfree(){
     $('#wallet-popup').modal('hide');
     if (typeof web3 == 'undefined'){
-        ans = window.confirm("metamaskをインストールしてください\nmetamaskのインストール方法を確認しますか？\n\n参考：https://note.com/ocurima/n/n29e1fd7ecbdd");
+        ans = window.confirm("please install metamask\how to install nmetamask? \n\n reference：https://metamask.io/download");
         if (ans){
             window.open("https://note.com/ocurima/n/n29e1fd7ecbdd");
         }
         return;
     }
     
-    ans = window.confirm("OKを押すと『記念NFT』がMetaMaskに送信されます")
+    ans = window.confirm("Press “OK” .Then  "Memorial NFT" will be sent to your address")
     if ( !ans ){
         return;
     }
@@ -52,7 +52,7 @@ async function loadmm_gasfree(){
     const signer = provider.getSigner();
     const add = await signer.getAddress();
 
-    ans2 = await signer.signMessage( "NFTレプリカを受け取ります" );
+    ans2 = await signer.signMessage( "get NFT" );
     if ( ans2[1] != "x" ){
         return;
     }
