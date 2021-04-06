@@ -68,12 +68,12 @@ async function loadmm_gasfree(){
 
 function explorer(){
     //window.alert("matic")
-    ans = window.confirm("ブロックチェーンエクスプローラーを開く\n\n" + explorerlist[network] + ContractAddress + "/inventory\n\nNFTの発行状況を確認しますか？(通常は1分以内に発行されます)");
+    ans = window.confirm("Open Blockchain Explorer\n\n" + explorerlist[network] + ContractAddress + "/inventory\n\nDo you want to check the issuance status of NFT? (Usually issued within 1 minute)");
         if(ans){ window.open( explorerlist[network] +ContractAddress + "/inventory"); }
 }
 
 function opensea(){
     //window.alert("opensea")
-    ans = window.confirm("OpenSeaでNFTレプリカを確認する\n\n"+ opensealist[network] + "\n\nOpenSeaを開き、MetaMaskを接続しますか？\n(反映には数分時間がかかります。NFTの画像は処理が終わると表示されます)");
+    ans = window.confirm("Check NFT in OpenSea\n\n"+ opensealist[network] + "\n\nDo you want to open OpenSea?\n(It will take a few minutes to reflect. The NFT image will be displayed after processing)");
         if(ans){ window.open( opensealist[network] ); }
 }
