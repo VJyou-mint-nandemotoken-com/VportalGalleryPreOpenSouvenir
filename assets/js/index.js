@@ -34,9 +34,9 @@ function walletmodal(){
 async function loadmm_gasfree(){
     $('#wallet-popup').modal('hide');
     if (typeof web3 == 'undefined'){
-        ans = window.confirm("metamaskをインストールしてください\nmetamaskのインストール方法を確認しますか？\n\n参考：https://note.com/ocurima/n/n29e1fd7ecbdd");
+        ans = window.confirm("please install metamask\n：https://metamask.io/download");
         if (ans){
-            window.open("https://note.com/ocurima/n/n29e1fd7ecbdd");
+            window.open("https://metamask.io/download");
         }
         return;
     }
