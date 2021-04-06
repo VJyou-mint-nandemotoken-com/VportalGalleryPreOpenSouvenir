@@ -34,7 +34,7 @@ function walletmodal(){
 async function loadmm_gasfree(){
     $('#wallet-popup').modal('hide');
     if (typeof web3 == 'undefined'){
-        ans = window.confirm("please install metamask\how to install nmetamask? \n\nreference：https://metamask.io/download");
+        ans = window.confirm("please install metamask\how to install nmetamask? \n\nreference："https://metamask.io/download");
         if (ans){
             window.open("https://note.com/ocurima/n/n29e1fd7ecbdd");
         }
